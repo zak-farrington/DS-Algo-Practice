@@ -1,7 +1,7 @@
 /// <summary>
-/// Func, Action and Predicate Delegates (function pointers) in C#.
+///  Func, Action and Predicate Delegates (function pointers) in C#.
 ///  Func: takes generic input and returns generic output
-///  Action: Takes a generic input and always returns bool
+///  Action: Takes a generic input and returns void
 ///  Predicate: Takes generic input and always returns bool
 ///</summary>
 void Main()
@@ -18,7 +18,7 @@ void Main()
 	// Select supports Func delegates
 	var studentNames = students.Select(getStudentsName).Dump();
 	
-	// Action: Takes a generic input and always returns bool
+	// Action: Takes a generic input and always returns void
 	Action<Student> doStudentAction = student => Console.WriteLine($"Action trigger for {student.Name}");
 	
 	// ForEach method supports Action
