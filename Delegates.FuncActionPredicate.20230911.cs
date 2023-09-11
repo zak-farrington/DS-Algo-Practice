@@ -15,7 +15,7 @@ void Main()
 	// Func: takes generic input and returns generic output
 	Func<Student, string> getStudentsName = student => student.Name;
 	
-	// IEnumerable.Select supports Func delegates
+	// Select supports Func delegates
 	var studentNames = students.Select(getStudentsName).Dump();
 	
 	// Action: Takes a generic input and always returns bool
@@ -28,7 +28,7 @@ void Main()
 	Predicate<Student> isStudentDrinkingAge = student => student.Age > 21;
 	
 	// FindAll supports Predicate delegate
-	students.FindAll(doStudentAction).Dump();
+	students.FindAll(isStudentDrinkingAge).Dump();
 }
 
 public class Student
