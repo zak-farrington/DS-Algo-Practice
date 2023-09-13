@@ -1,4 +1,4 @@
-﻿// Written and tested with LINQPad
+// Written and tested with LINQPad
 
 /// <summary>
 /// Simple example insertion sort.
@@ -67,7 +67,6 @@ private int[] GetSelectionSortedArray(int[] arrayToSort)
 
     for (int x = 0; x < clonedArray.Length; x++)
     {
-
         var lowestIndexThusFar = x;
 
         for (int y = x + 1; y < arrayToSort.Length; y++)
